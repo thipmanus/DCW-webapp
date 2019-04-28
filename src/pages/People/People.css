@@ -1,0 +1,22 @@
+.peoBg {
+  background: url(./people.jpg) no-repeat center center fixed;
+  text-align: center;  
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+.shipheader {
+  display: inline;
+  font-size: 2.2em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 0.3em;
+  user-select: none;
+  color: black;
+  background: grey;
+}
+
+.shiptitle {
+  color:white;
+  display: inline;
+}

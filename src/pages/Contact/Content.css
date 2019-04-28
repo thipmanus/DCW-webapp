@@ -1,0 +1,23 @@
+.Backgounds{
+  background: url(./z.jpg) no-repeat center center fixed;  
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  
+}
+
+.xflex{
+  display: flex;
+  justify-content: center;
+}
+
+.top{
+  display: inline;
+  font-size: 2.2em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 1em;
+  user-select: none;
+  color: black;
+  background:rgba(233, 233, 21, 0.884)
+ }
