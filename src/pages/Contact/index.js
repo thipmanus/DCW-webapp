@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 import { Card, Button, CardImg, CardText, CardGroup,CardBody } from 'reactstrap';
 import './Content.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
+import * as Colors from 'material-ui/styles/colors';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+const muiTheme = getMuiTheme({
+  palette: {
+    textColor: Colors.darkBlack,
+    primary1Color: Colors.grey900,
+    pickerHeaderColor: Colors.darkBlack,
+    alternateTextColor: Colors.white
+  }
+});
 class Content extends Component {
   render() {
     return (
-
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <AppBar title="Contact" />
       <div class = "Backgounds">
       <br></br>
       <h1 className = "top">&nbsp;&nbsp;Developer&nbsp;&nbsp;</h1>
@@ -25,6 +39,7 @@ class Content extends Component {
       </CardGroup>
       </div>
       </div>
+      </MuiThemeProvider>
     );
    }
   }
